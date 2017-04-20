@@ -43,7 +43,7 @@ echo terminal_style('Here your text', null, null, 'bold');
 
 Style|Example
 --- | --- 
-|`Bold`|echo terminal_style('Here your text', null, null, 'bold');
+|`Bold`| ```php echo terminal_style('Here your text', null, null, 'bold') ```;
 
 
 ## Overview
