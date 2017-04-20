@@ -13,6 +13,11 @@
 - Easy to install » [installation](#installation)
 - Love feedback » [backlog](https://github.com/bvanhoekelen/performance/blob/master/BACKLOG.md) or [create issues](https://github.com/bvanhoekelen/performance/issues)
 
+## How to use
+```php
+ echo terminal_style( <$message:mixed> , <$color:string/int:optional> , <$background:string/int:optional>, <$style:string/int:optional>');
+```
+
 ## Text color
 <p align="center"><img src="/assets/terminal-text-color.png" alt="PHP Terminal style set text color" /></p>
 
@@ -21,6 +26,28 @@
 // Print red text 
 echo terminal_style('Here your text', 'red');
 ```
+### Text colors
+
+Style|Code
+--- | --- | ---
+|`default`| echo terminal_style('Here your text', 'default');
+|`white`| echo terminal_style('Here your text', 'white');
+|`black`| echo terminal_style('Here your text', 'black');
+|`red`| echo terminal_style('Here your text', 'red');
+|`green`| echo terminal_style('Here your text', 'green');
+|`yellow`| echo terminal_style('Here your text', 'yellow');
+|`blue`| echo terminal_style('Here your text', 'blue');
+|`magenta`| echo terminal_style('Here your text', 'magenta');
+|`cyan`| echo terminal_style('Here your text', 'cyan');
+|`gray`| echo terminal_style('Here your text', 'gray');
+|`dark-gray`| echo terminal_style('Here your text', 'dark-gray');
+|`light-gray`| echo terminal_style('Here your text', 'light-gray');
+|`light-red`| echo terminal_style('Here your text', 'light-red');
+|`light-green`| echo terminal_style('Here your text', 'light-green');
+|`light-yellow`| echo terminal_style('Here your text', 'light-yellow');
+|`light-blue`| echo terminal_style('Here your text', 'light-blue');
+|`light-magenta`| echo terminal_style('Here your text', 'light-magenta');
+|`light-cyan`| echo terminal_style('Here your text', 'light-cyan');
 
 ## Background color
 <p align="center"><img src="/assets/terminal-background-color.png" alt="PHP Terminal style set background color" /></p>
@@ -52,16 +79,6 @@ Style|Code|Example
 |`reverse`| echo terminal_style('Here your text', null, null, 'reverse');|
 |`hidden`| echo terminal_style('Here your text', null, null, 'hidden');|
 |`password`| echo terminal_style('Here your text', null, null, 'password');|
-
-
-            'default'       => 0,
-            'bold'          => 1,
-            'dim'           => 2,
-            'underlined'    => 4,
-            'blink'         => 5,
-            'reverse'       => 7,
-            'hidden'        => 8,
-            'password'      => 8,
 
 ## Overview
 <p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
