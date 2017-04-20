@@ -42,7 +42,7 @@ echo terminal_style('Here your text', null, null, 'bold');
 ### Test styls
 
 Style|Code|Example
---- | --- 
+--- | --- | ---
 |`default`| echo terminal_style('Here your text', null, null, 'default');|example
 |`bold`| echo terminal_style('Here your text', null, null, 'bold');|**example**
 |`dim`| echo terminal_style('Here your text', null, null, 'dim');|**example**
