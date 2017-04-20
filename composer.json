@@ -14,9 +14,7 @@
     "larapack/dd": "1.*"
   },
   "autoload": {
-    "psr-4": {
-      "Performance\\": "src/"
-    }
+    "files": ["src/terminal-style.php"]
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7"
