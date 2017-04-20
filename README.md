@@ -11,7 +11,7 @@
 - Change text style to bold, dim, underlined, blink ...  » [Text style](#text-style)
 - Support for Laravel framework » [Laravel](https://laravel.com)
 - Easy to install » [installation](#installation)
-- Love feedback » [backlog](https://github.com/bvanhoekelen/performance/blob/master/BACKLOG.md) or [create issues](https://github.com/bvanhoekelen/performance/issues)
+- Love feedback » [backlog](https://github.com/bvanhoekelen/terminal-style/blob/master/BACKLOG.md) or [create issues](https://github.com/bvanhoekelen/terminal-style/issues)
 
 ## How to use
 ```php
@@ -26,37 +26,23 @@
 // Print red text 
 echo terminal_style('Here your text', 'red');
 ```
-### Text colors
+### Text color names
+Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
 
-Style|Code
---- | ---
-|`default`| echo terminal_style('Here your text', 'default');
-|`white`| echo terminal_style('Here your text', 'white');
-|`black`| echo terminal_style('Here your text', 'black');
-|`red`| echo terminal_style('Here your text', 'red');
-|`green`| echo terminal_style('Here your text', 'green');
-|`yellow`| echo terminal_style('Here your text', 'yellow');
-|`blue`| echo terminal_style('Here your text', 'blue');
-|`magenta`| echo terminal_style('Here your text', 'magenta');
-|`cyan`| echo terminal_style('Here your text', 'cyan');
-|`gray`| echo terminal_style('Here your text', 'gray');
-|`dark-gray`| echo terminal_style('Here your text', 'dark-gray');
-|`light-gray`| echo terminal_style('Here your text', 'light-gray');
-|`light-red`| echo terminal_style('Here your text', 'light-red');
-|`light-green`| echo terminal_style('Here your text', 'light-green');
-|`light-yellow`| echo terminal_style('Here your text', 'light-yellow');
-|`light-blue`| echo terminal_style('Here your text', 'light-blue');
-|`light-magenta`| echo terminal_style('Here your text', 'light-magenta');
-|`light-cyan`| echo terminal_style('Here your text', 'light-cyan');
+See [the full color name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
 
 ## Background color
 <p align="center"><img src="/assets/terminal-background-color.png" alt="PHP Terminal style set background color" /></p>
 
 ### Code example
 ```php
-// Print red background color
+// Print text with background red
 echo terminal_style('Here your text', null, 'red');
 ```
+### Background colors names
+Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
+
+See [the full background color name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
 
 ## Text style
 <p align="center"><img src="/assets/terminal-text-style.png" alt="PHP Terminal style set style" /></p>
@@ -66,22 +52,23 @@ echo terminal_style('Here your text', null, 'red');
 // Print text style bold
 echo terminal_style('Here your text', null, null, 'bold');
 ```
-### Test styls
+### Text styles
 
-Style|Code|Example
---- | --- | ---
-|`default`| echo terminal_style('Here your text', null, null, 'default');|example
-|`bold`| echo terminal_style('Here your text', null, null, 'bold');|**example**
-|`dim`| echo terminal_style('Here your text', null, null, 'dim');|**example**
-|`italic`| echo terminal_style('Here your text', null, null, 'italic');|_example_
-|`underlined`| echo terminal_style('Here your text', null, null, 'underlined');|
-|`blink`| echo terminal_style('Here your text', null, null, 'blink');|
-|`reverse`| echo terminal_style('Here your text', null, null, 'reverse');|
-|`hidden`| echo terminal_style('Here your text', null, null, 'hidden');|
-|`password`| echo terminal_style('Here your text', null, null, 'password');|
+Use can use: `default`, `bold `, `dim`, `italic`, `underlined`, 'blink' [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
 
-## Overview
-<p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
+See [the full text style name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
+
+# Help, docs and links
+- [Wiki](https://github.com/bvanhoekelen/terminal-style/wiki)
+- [Backlog](https://github.com/bvanhoekelen/terminal-style/blob/master/BACKLOG.md)
+- [Change log](https://github.com/bvanhoekelen/terminal-style/blob/master/CHANGELOG.md)
+- [Packagist](https://packagist.org/packages/bvanhoekelen/terminal-style)
+
+## Backlog & Feedback
+If you have any suggestions to improve this php terminal style tool? Please add your feature, bug or improvement to the [BACKLOG.dm](https://github.com/bvanhoekelen/terminal-style/blob/master/BACKLOG.md). Or create a [issues](https://github.com/bvanhoekelen/terminal-style/issues).
+- [Open backlog](https://github.com/bvanhoekelen/terminal-style/blob/master/BACKLOG.md)
+- [Create issues](https://github.com/bvanhoekelen/terminal-style/issues)
+
 
 # Installation
 
@@ -113,3 +100,6 @@ require_once('../vendor/autoload.php');
 echo terminal_style('Here your text', 'red');
 
 ```
+
+## Overview
+<p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
