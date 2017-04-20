@@ -29,7 +29,7 @@ echo terminal_style('Here your text', 'red');
 ### Text colors
 
 Style|Code
---- | --- | ---
+--- | ---
 |`default`| echo terminal_style('Here your text', 'default');
 |`white`| echo terminal_style('Here your text', 'white');
 |`black`| echo terminal_style('Here your text', 'black');
