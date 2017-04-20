@@ -41,10 +41,27 @@ echo terminal_style('Here your text', null, null, 'bold');
 ```
 ### Test styls
 
-Style|Example
+Style|Code|Example
 --- | --- 
-|`Bold`| `echo terminal_style('Here your text', null, null, 'bold')`;
+|`default`| echo terminal_style('Here your text', null, null, 'default');|example
+|`bold`| echo terminal_style('Here your text', null, null, 'bold');|**example**
+|`dim`| echo terminal_style('Here your text', null, null, 'dim');|**example**
+|`italic`| echo terminal_style('Here your text', null, null, 'italic');|_example_
+|`underlined`| echo terminal_style('Here your text', null, null, 'underlined');|
+|`blink`| echo terminal_style('Here your text', null, null, 'blink');|
+|`reverse`| echo terminal_style('Here your text', null, null, 'reverse');|
+|`hidden`| echo terminal_style('Here your text', null, null, 'hidden');|
+|`password`| echo terminal_style('Here your text', null, null, 'password');|
 
+
+            'default'       => 0,
+            'bold'          => 1,
+            'dim'           => 2,
+            'underlined'    => 4,
+            'blink'         => 5,
+            'reverse'       => 7,
+            'hidden'        => 8,
+            'password'      => 8,
 
 ## Overview
 <p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
