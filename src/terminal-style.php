@@ -66,6 +66,7 @@ if ( ! function_exists('terminal_style'))
             'default'       => 0,
             'bold'          => 1,
             'dim'           => 2,
+            'italic'        => 3,
             'underlined'    => 4,
             'blink'         => 5,
             'reverse'       => 7,

@@ -11,6 +11,11 @@ require_once('../vendor/autoload.php');
 echo " > " . terminal_style('This text will be bold', null, null, 'bold') . PHP_EOL;
 
 /*
+ * Change text to italic
+ */
+echo " > " . terminal_style('This text will be italic', null, null, 'italic') . PHP_EOL;
+
+/*
  * Change text to dim
  */
 echo " > " . terminal_style('This text will be dim', null, null, 'dim') . PHP_EOL;
