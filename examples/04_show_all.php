@@ -31,6 +31,7 @@ $textStyle = [
     'default',
     'bold',
     'dim',
+    'italic',
     'underlined',
     'blink',
     'reverse',
