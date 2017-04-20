@@ -16,11 +16,35 @@
 ## Text color
 <p align="center"><img src="/assets/terminal-text-color.png" alt="PHP Terminal style set text color" /></p>
 
+### Code example
+```php
+// Print red text 
+echo terminal_style('Here your text', 'red');
+```
+
 ## Background color
 <p align="center"><img src="/assets/terminal-background-color.png" alt="PHP Terminal style set background color" /></p>
 
+### Code example
+```php
+// Print red background color
+echo terminal_style('Here your text', null, 'red');
+```
+
 ## Text style
 <p align="center"><img src="/assets/terminal-text-style.png" alt="PHP Terminal style set style" /></p>
+
+### Code example
+```php
+// Print text style bold
+echo terminal_style('Here your text', null, null, 'bold');
+```
+### Test styls
+
+Style|Example
+--- | --- 
+|`Bold`|echo terminal_style('Here your text', null, null, 'bold');
+
 
 ## Overview
 <p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
