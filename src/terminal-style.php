@@ -2,8 +2,11 @@
 
 if ( ! function_exists('terminal_style'))
 {
-    function terminal_style($message, $color = null, $background = null, $style = null)
+    function terminal_style($message = null, $color = null, $background = null, $style = null)
     {
+        if( ! $message)
+            return;
+
         // Set default
         $color      = ( ! $color )          ? 'default' : $color ;
         $background = ( ! $background )     ? 'default' : $background ;
