@@ -15,7 +15,7 @@
 
 ## How to use
 ```php
- echo terminal_style( $message, $color = null, $background = null, $style = null);
+ echo terminal_style($message = null, $color = null, $background = null, $style = null);
 ```
 
 ## Text color
