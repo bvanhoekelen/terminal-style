@@ -8,6 +8,11 @@ echo str_repeat('-', 40) . PHP_EOL . PHP_EOL;
 // Show colors
 $colors = [
     'default',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger',
     'white',
     'black',
     'red',
