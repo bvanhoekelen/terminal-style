@@ -44,6 +44,10 @@ Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](https://git
 
 See [the full background color name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
 
+or
+
+See [Custom background colors](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
+
 ## Text style
 <p align="center"><img src="/assets/terminal-text-style.png" alt="PHP Terminal style set style" /></p>
 
@@ -106,3 +110,4 @@ echo terminal_style('Here your text', 'red');
 
 ## Custom background
 <p align="center"><img src="/assets/terminal-custom-background.png" alt="PHP Terminal style custom backgroud" /></p>
+See [Custom background colors](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
