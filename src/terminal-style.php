@@ -7,6 +7,21 @@ if ( ! function_exists('terminal_style'))
         if( ! $message)
             return;
 
+        // Only for terminal
+        if( php_sapi_name() !== "cli")
+            return $message;
+
+        // Only for linux not for windows (PowerShell)
+        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN')
+            return $message;
+
+        // Detect custom background mode
+        if(is_int($color) and $color >= 16)
+        {
+            $background = 5;
+            $style = 48;
+        }
+
         // Set default
         $color      = ( ! $color )          ? 'default' : $color ;
         $background = ( ! $background )     ? 'default' : $background ;
@@ -14,8 +29,15 @@ if ( ! function_exists('terminal_style'))
         $code       = [];
 
         $textColorCodes = [
-            // Colors
+            // Label
             'default'       => 39,
+            'primary'       => 34,
+            'success'       => 32,
+            'info'          => 36,
+            'warning'       => 33,
+            'danger'        => 31,
+
+            // Colors
             'white'         => 97,
             'black'         => 30,
             'red'           => 31,
@@ -40,8 +62,15 @@ if ( ! function_exists('terminal_style'))
         ];
 
         $backgroundColorCodes = [
-            // Colors
+            // Label
             'default'       => 39,
+            'primary'       => 44,
+            'success'       => 42,
+            'info'          => 46,
+            'warning'       => 43,
+            'danger'        => 41,
+
+            // Colors
             'white'         => 39,
             'black'         => 40,
             'red'           => 41,
@@ -83,7 +112,7 @@ if ( ! function_exists('terminal_style'))
         elseif( isset( $styleCodes[ $style ] ) )
             $code[] = $styleCodes[$style];
         else
-            dd(" > terminal_style(): Text style '" . $style . "' does not exist. You can only use the following colors", array_keys($styleCodes));
+            dd(" > terminal_style(): Text style '" . $style . "' does not exist. You can only use the following text styles", array_keys($styleCodes));
 
         // Set background color
         if(is_int($background))
@@ -91,7 +120,7 @@ if ( ! function_exists('terminal_style'))
         elseif( isset( $backgroundColorCodes[ $background ] ) )
             $code[] = $backgroundColorCodes[$background];
         else
-            dd(" > terminal_style(): Background color '" . $background . "' does not exist. You can only use the following colors", array_keys($backgroundColorCodes));
+            dd(" > terminal_style(): Background color '" . $background . "' does not exist. You can only use the following background colors", array_keys($backgroundColorCodes));
 
         // Set text color
         if(is_int($color))
@@ -99,7 +128,7 @@ if ( ! function_exists('terminal_style'))
         elseif( isset( $textColorCodes[ $color ] ) )
             $code[] = $textColorCodes[$color];
         else
-            dd(" > terminal_style(): Text color '" . $color . "' does not exist. You can only use the following colors", array_keys($textColorCodes));
+            dd(" > terminal_style(): Text color '" . $color . "' does not exist. You can only use the following text colors", array_keys($textColorCodes));
 
         // Set background
         return "\e[" . implode($code, ';') . "m" . $message . "\e[0m";
