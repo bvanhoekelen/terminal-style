@@ -27,9 +27,9 @@
 echo terminal_style('Here your text', 'red');
 ```
 ### Text color names
-Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
+Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
 
-See [the full color name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
+See [the full color name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-color-names)
 
 ## Background color
 <p align="center"><img src="/assets/terminal-background-color.png" alt="PHP Terminal style set background color" /></p>
@@ -40,9 +40,9 @@ See [the full color name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%
 echo terminal_style('Here your text', null, 'red');
 ```
 ### Background colors names
-Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
+Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
 
-See [the full background color name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
+See [the full background color name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
 
 ## Text style
 <p align="center"><img src="/assets/terminal-text-style.png" alt="PHP Terminal style set style" /></p>
@@ -54,9 +54,9 @@ echo terminal_style('Here your text', null, null, 'bold');
 ```
 ### Text styles
 
-Use can use: `default`, `bold `, `dim`, `italic`, `underlined`, 'blink' [...](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
+Use can use: `default`, `bold `, `dim`, `italic`, `underlined`, 'blink' [...](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
 
-See [the full text style name list here](/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
+See [the full text style name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-text-style-names)
 
 # Help, docs and links
 - [Wiki](https://github.com/bvanhoekelen/terminal-style/wiki)
