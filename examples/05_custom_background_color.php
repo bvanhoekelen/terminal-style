@@ -20,8 +20,3 @@ for($i=16; $i<256; $i++)
 }
 
 echo PHP_EOL;
-
-/*
- * See the GitHub page for all color names
- * https://github.com/bvanhoekelen/terminal-style
- */
