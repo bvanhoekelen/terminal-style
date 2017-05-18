@@ -103,3 +103,6 @@ echo terminal_style('Here your text', 'red');
 
 ## Overview
 <p align="center"><img src="/assets/terminal-all-styles.png" alt="PHP Terminal style all styles" /></p>
+
+## Custom background
+<p align="center"><img src="/assets/terminal-custom-background.png" alt="PHP Terminal style custom backgroud" /></p>
