@@ -8,6 +8,7 @@
 - The easiest way to style your text in the command line / terminal
 - Change text color to red, green, yellow ...  » [Text color](#text-color)
 - Change background color to red, green, yellow ...  » [Background color](#background-color)
+- Change background in customer 8-bit color  » [Custom background color](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
 - Change text style to bold, dim, underlined, blink ...  » [Text style](#text-style)
 - Support for Laravel framework » [Laravel](https://laravel.com)
 - Easy to install » [installation](#installation)
@@ -42,7 +43,7 @@ echo terminal_style('Here your text', null, 'red');
 ### Background colors names
 Use can use: `default`, `yellow`, `red`, `green`, `light-gray` [...](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names)
 
-See [the full background color name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names) or see [custom background colors](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
+See [the full background color name list here](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-background-color-names) or see [custom background color](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
 
 ## Text style
 <p align="center"><img src="/assets/terminal-text-style.png" alt="PHP Terminal style set style" /></p>
@@ -107,4 +108,4 @@ echo terminal_style('Here your text', 'red');
 ## Custom background
 <p align="center"><img src="/assets/terminal-custom-background.png" alt="PHP Terminal style custom backgroud" /></p>
 
-See [Custom background colors](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
+See [custom background color](https://github.com/bvanhoekelen/terminal-style/wiki/style-%C2%BB-custom-background)
