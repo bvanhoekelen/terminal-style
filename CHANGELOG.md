@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.0.3](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.3) - 2017-11-20
+- Remove larapack/dd dependency
+- Change dd() to die()
+
 ## [v1.0.2](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.2) - 2017-05-18
 - Change error message
 - Add custom background color
