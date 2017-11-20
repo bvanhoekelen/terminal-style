@@ -111,24 +111,30 @@ if ( ! function_exists('terminal_style'))
             $code[] = $style;
         elseif( isset( $styleCodes[ $style ] ) )
             $code[] = $styleCodes[$style];
-        else
-            dd(" > terminal_style(): Text style '" . $style . "' does not exist. You can only use the following text styles", array_keys($styleCodes));
+        else{
+	        print_r(array_keys($backgroundColorCodes));
+	        die(' > terminal_style(): Text style "' . $style . '" does not exist. You can only use the text styles above' . PHP_EOL);
+        }
 
         // Set background color
         if(is_int($background))
             $code[] = $background;
         elseif( isset( $backgroundColorCodes[ $background ] ) )
             $code[] = $backgroundColorCodes[$background];
-        else
-            dd(" > terminal_style(): Background color '" . $background . "' does not exist. You can only use the following background colors", array_keys($backgroundColorCodes));
+        else{
+        	print_r(array_keys($backgroundColorCodes));
+            die(' > terminal_style(): Background color "' . $background . '" does not exist. You can only use the background colors above' . PHP_EOL);
+        }
 
         // Set text color
         if(is_int($color))
             $code[] = $color;
         elseif( isset( $textColorCodes[ $color ] ) )
             $code[] = $textColorCodes[$color];
-        else
-            dd(" > terminal_style(): Text color '" . $color . "' does not exist. You can only use the following text colors", array_keys($textColorCodes));
+        else{
+	        print_r(array_keys($textColorCodes));
+            die(' > terminal_style(): Text color "' . $color . '" does not exist. You can only use the following text colors' . PHP_EOL);
+        }
 
         // Set background
         return "\e[" . implode($code, ';') . "m" . $message . "\e[0m";
