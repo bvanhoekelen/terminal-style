@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.0.4](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.4) - 2018-02-19
+- Fix composer validate error
+
 ## [v1.0.3](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.3) - 2017-11-20
 - Remove larapack/dd dependency
 - Change dd() to die()
