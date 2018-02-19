@@ -1,6 +1,6 @@
 # PHP Terminal style
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg?maxAge=2592000&style=flat-square)](https://github.com/bvanhoekelen/terminal-style/blob/master/LICENSE)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/bvanhoekelen/terminal-style.svg?style=flat-square)](https://packagist.org/packages/bvanhoekelen/terminal-style)
+[![GitHub release](https://img.shields.io/github/release/bvanhoekelen/terminal-style.svg?style=flat-square)](https://github.com/bvanhoekelen/terminal-style/releases)
 [![Packagist](https://img.shields.io/packagist/dt/bvanhoekelen/terminal-style.svg?style=flat-square)](https://packagist.org/packages/bvanhoekelen/terminal-style)
 [![Github issues](https://img.shields.io/github/issues/bvanhoekelen/terminal-style.svg?style=flat-square)](https://github.com/bvanhoekelen/terminal-style/issues)
 
