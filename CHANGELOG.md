@@ -1,4 +1,6 @@
 # Change Log
+## [v1.0.5](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.4) - 2020-01-31
+- Support PHP 7.4, fix implode order issues. See #2.
 
 ## [v1.0.4](https://github.com/bvanhoekelen/terminal-style/tree/v1.0.4) - 2018-02-19
 - Fix composer validate error
