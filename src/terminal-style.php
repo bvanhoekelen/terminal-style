@@ -137,6 +137,6 @@ if ( ! function_exists('terminal_style'))
         }
 
         // Set background
-        return "\e[" . implode($code, ';') . "m" . $message . "\e[0m";
+        return "\e[" . implode(';', $code) . "m" . $message . "\e[0m";
     }
 }
